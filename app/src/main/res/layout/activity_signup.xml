@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="FAF9F6"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/linearlayout_register"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#4E342E"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="32dp"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이메일"
+            android:textColor="#4E2D0C"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@android:color/transparent"
+            android:textColor="#4E2D0C"/>
+
+        <View
+            android:id="@+id/view_email"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6A4A35"/>
+
+        <TextView
+            android:id="@+id/tv_email_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용 불가능한 이메일입니다."
+            android:textColor="#FF1010"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/tv_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호"
+            android:textColor="#4E2D0C"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="textPassword"
+            android:hint="12자 이상 영어와 특수문자를 포함하여 입력해주세요"
+            android:background="@android:color/transparent"
+            android:textColor="#4E2D0C"
+            android:textColorHint="#C4BEBE"
+            android:drawableEnd="@drawable/open_eye"
+            android:drawablePadding="8dp"
+            android:paddingEnd="12dp"
+            android:drawableTint="#4E2D0C"/>
+
+        <View
+            android:id="@+id/view_pw"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6A4A35"/>
+
+
+        <TextView
+            android:id="@+id/tv_pw_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 확인"
+            android:textColor="#4E2D0C"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+
+
+        <EditText
+            android:id="@+id/et_password_check"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:inputType="textPassword"
+            android:hint="12자 이상 영어와 특수문자를 포함하여 입력해주세요"
+            android:background="@android:color/transparent"
+            android:textColor="#4E2D0C"
+            android:textColorHint="#C4BEBE"
+            android:drawableEnd="@drawable/open_eye"
+            android:drawablePadding="8dp"
+            android:paddingEnd="12dp"
+            android:drawableTint="#4E2D0C"/>
+
+        <View
+            android:id="@+id/view_pw_check"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#6A4A35"/>
+        
+        <TextView
+            android:id="@+id/tv_pw_toast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호가 일치하지 않습니다."
+            android:textColor="#FF1010"
+            android:textSize="12dp"
+            android:visibility="gone"
+            android:layout_marginTop="4dp"/>
+
+        <Button
+            android:id="@+id/button_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원가입"
+            android:textColor="#F9F9F9"
+            android:backgroundTint="#4E2D0C"
+            android:layout_marginTop="32dp"/>
+        
+        <TextView
+            android:id="@+id/tv_go_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이미 계정이 있으신가요? 로그인"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    </ScrollView>
